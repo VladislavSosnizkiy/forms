@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+</head>
+<body>
+<form action="registration"method="POST">
+    <label for="name">
+        Name
+    </label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    <label for="email">
+        Email
+    </label>
+    <input type="text" id="email" email="email" required>
+    <br><br>
+    <label for="password">
+        password
+    </label>
+    <input type="text" id="password" password="password" required>
+    <br><br>
+        <label for="password">
+         confirm-password 
+    </label>
+    <input type="text" id="confirm-password" password="confirm-password" required>
+    <br><br>
+    <label>
+        Choose gender
+        <input type="radio" name="gender" value="male">
+        male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female">
+        female
+      </label>
+      <br><br>
+      <label for="age">
+        Age:
+      </label>
+      <input type="number" id="age" name="age" min="0" max="80" required>
+     <br><br>
+     <label for="course">Choose class</label>
+     <select name="class" id="class">
+        <option value="Front-End">Front-End</option>
+        <option value="Back-End">Back-End</option>
+        <option value="Project Management">Project Management</option>
+        <option value="QA Manual">QA Manual</option>
+     </select>
+     <br><br>
+     <label for="Full Adress">
+        Full Address
+     </label>
+     <input type="text" id="address" name="address" 
+     placeholder="Country,region,city,street" >
+     <br><br>
+     <label for="agree">
+        <input type="checkbox" id="agree" name="agree" value="yes">
+        Accept the policy
+     </label>
+     <br><br>
+     <button type="reset">reset</button>
+     <button type="submit">register</button>
+
+
+
+</form>
+</body>
+</html>
